@@ -41,7 +41,7 @@ az login
 
 ## 🚀 Usage:
 ```bash
-  azure_region_resource_counter.sh [options]
+  azure-resource-calculator.sh [options]
 ```
 ### Options
 | Flag | Description |
@@ -55,19 +55,19 @@ az login
 ### Examples:
   #### Current/default subscription, all regions
   ```bash
-  ./azure_region_resource_counter.sh
+  ./azure-resource-calculator.sh
   ```
   #### Specific subscription (by ID or name), all regions
   ```bash
-  ./azure_region_resource_counter.sh -s 00000000-0000-0000-0000-000000000000
+  ./azure-resource-calculator.sh -s 00000000-0000-0000-0000-000000000000
   ```
   #### Specific subscription + only East/Southeast Asia
   ```bash
-  ./azure_region_resource_counter.sh -s 00000000-0000-0000-0000-000000000000 -r eastasia,southeastasia
+  ./azure-resource-calculator.sh -s 00000000-0000-0000-0000-000000000000 -r eastasia,southeastasia
   ```
   #### All enabled subscriptions, all regions
   ```bash
-  ./azure_region_resource_counter.sh -a
+  ./azure-resource-calculator.sh -a
   ```
 
 #### Notes:

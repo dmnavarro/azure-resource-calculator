@@ -11,7 +11,7 @@ set -euo pipefail
 usage() {
   cat <<'EOF'
 Usage:
-  azure_region_resource_counter.sh [options]
+  azure-resource-calculator.sh [options]
 
 Options:
   -s, --subscription  <SUB_ID_OR_NAME>   Subscription ID or name to scan.
@@ -23,16 +23,16 @@ Options:
 
 Examples:
   # Current/default subscription, all regions
-  ./azure_region_resource_counter.sh
+  ./azure-resource-calculator.sh
 
   # Specific subscription (by ID or name), all regions
-  ./azure_region_resource_counter.sh -s 00000000-0000-0000-0000-000000000000
+  ./azure-resource-calculator.sh -s 00000000-0000-0000-0000-000000000000
 
   # Specific subscription + only East/Southeast Asia
-  ./azure_region_resource_counter.sh -s "My Prod Sub" -r eastasia,southeastasia
+  ./azure-resource-calculator.sh -s "My Prod Sub" -r eastasia,southeastasia
 
   # All enabled subscriptions, all regions
-  ./azure_region_resource_counter.sh -a
+  ./azure-resource-calculator.sh -a
 
 Notes:
   • Resources with no location reported are bucketed as "global/none".

@@ -1,4 +1,4 @@
-# Azure Region Resource Counter
+# Azure Resource Counter
 
 ![Azure CLI](https://img.shields.io/badge/Azure%20CLI-%230078D4.svg?logo=microsoftazure&logoColor=white)
 ![jq](https://img.shields.io/badge/jq-JSON-blue)
